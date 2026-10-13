@@ -1,0 +1,703 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		100000000000000000000101 /* PasskeyContextScannerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000001 /* PasskeyContextScannerApp.swift */; };
+		100000000000000000000102 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000002 /* HomeView.swift */; };
+		100000000000000000000103 /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000003 /* ScannerView.swift */; };
+		100000000000000000000104 /* StaticImageAnalysisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000004 /* StaticImageAnalysisView.swift */; };
+		100000000000000000000105 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000005 /* ResultView.swift */; };
+		100000000000000000000106 /* RiskClassification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000006 /* RiskClassification.swift */; };
+		100000000000000000000107 /* VisualContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000007 /* VisualContext.swift */; };
+		100000000000000000000108 /* ScanResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000008 /* ScanResult.swift */; };
+		100000000000000000000109 /* OCRService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000009 /* OCRService.swift */; };
+		10000000000000000000010A /* DomainExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000000A /* DomainExtractor.swift */; };
+		10000000000000000000010B /* ContextClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000000B /* ContextClassifier.swift */; };
+		10000000000000000000010C /* EvaluationLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000000C /* EvaluationLogger.swift */; };
+		10000000000000000000010D /* DomainExtractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000000D /* DomainExtractorTests.swift */; };
+		10000000000000000000010F /* StaticImageAnalysisViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000011 /* StaticImageAnalysisViewModel.swift */; };
+		100000000000000000000110 /* EvaluationRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000012 /* EvaluationRecord.swift */; };
+		100000000000000000000111 /* EvaluationLoggerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000013 /* EvaluationLoggerTests.swift */; };
+		100000000000000000000112 /* ScanObservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000014 /* ScanObservation.swift */; };
+		100000000000000000000113 /* ScanObservationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000015 /* ScanObservationTests.swift */; };
+		100000000000000000000114 /* QRDetectionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000016 /* QRDetectionService.swift */; };
+		100000000000000000000115 /* QRDetectionServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000017 /* QRDetectionServiceTests.swift */; };
+		100000000000000000000116 /* ImageAnalysisService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000018 /* ImageAnalysisService.swift */; };
+		100000000000000000000117 /* ImageAnalysisServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000019 /* ImageAnalysisServiceTests.swift */; };
+		100000000000000000000118 /* UserIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000001A /* UserIntent.swift */; };
+		100000000000000000000119 /* VisualContextFeatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000001B /* VisualContextFeatures.swift */; };
+		10000000000000000000011A /* ContextFeatureExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000001C /* ContextFeatureExtractor.swift */; };
+		10000000000000000000011B /* ContextFeatureExtractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000001D /* ContextFeatureExtractorTests.swift */; };
+		10000000000000000000011C /* ClassificationRuleResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000001E /* ClassificationRuleResult.swift */; };
+		10000000000000000000011D /* ContextClassificationRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000001F /* ContextClassificationRules.swift */; };
+		10000000000000000000011E /* MultiSignalContextClassifierTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000020 /* MultiSignalContextClassifierTests.swift */; };
+		10000000000000000000011F /* CameraCaptureService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000021 /* CameraCaptureService.swift */; };
+		100000000000000000000120 /* CameraPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000022 /* CameraPreview.swift */; };
+		100000000000000000000121 /* CameraCaptureServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000023 /* CameraCaptureServiceTests.swift */; };
+		100000000000000000000122 /* LiveQRCodeDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000024 /* LiveQRCodeDetection.swift */; };
+		100000000000000000000123 /* QRCodeStabilityTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000025 /* QRCodeStabilityTrackerTests.swift */; };
+		100000000000000000000124 /* LiveScannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000026 /* LiveScannerViewModel.swift */; };
+		100000000000000000000125 /* LiveScannerViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000027 /* LiveScannerViewModelTests.swift */; };
+		100000000000000000000126 /* ContextAssociationEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000028 /* ContextAssociationEngine.swift */; };
+		100000000000000000000127 /* ImageQualityAssessmentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000029 /* ImageQualityAssessmentService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		100000000000000000000201 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 100000000000000000000301 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 100000000000000000000401;
+			remoteInfo = PasskeyContextScanner;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		100000000000000000000001 /* PasskeyContextScannerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasskeyContextScannerApp.swift; sourceTree = "<group>"; };
+		100000000000000000000002 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		100000000000000000000003 /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
+		100000000000000000000004 /* StaticImageAnalysisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticImageAnalysisView.swift; sourceTree = "<group>"; };
+		100000000000000000000005 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		100000000000000000000006 /* RiskClassification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiskClassification.swift; sourceTree = "<group>"; };
+		100000000000000000000007 /* VisualContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualContext.swift; sourceTree = "<group>"; };
+		100000000000000000000008 /* ScanResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanResult.swift; sourceTree = "<group>"; };
+		100000000000000000000009 /* OCRService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRService.swift; sourceTree = "<group>"; };
+		10000000000000000000000A /* DomainExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainExtractor.swift; sourceTree = "<group>"; };
+		10000000000000000000000B /* ContextClassifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextClassifier.swift; sourceTree = "<group>"; };
+		10000000000000000000000C /* EvaluationLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvaluationLogger.swift; sourceTree = "<group>"; };
+		10000000000000000000000D /* DomainExtractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainExtractorTests.swift; sourceTree = "<group>"; };
+		10000000000000000000000F /* PasskeyContextScanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PasskeyContextScanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		100000000000000000000010 /* PasskeyContextScannerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PasskeyContextScannerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		100000000000000000000011 /* StaticImageAnalysisViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticImageAnalysisViewModel.swift; sourceTree = "<group>"; };
+		100000000000000000000012 /* EvaluationRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvaluationRecord.swift; sourceTree = "<group>"; };
+		100000000000000000000013 /* EvaluationLoggerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvaluationLoggerTests.swift; sourceTree = "<group>"; };
+		100000000000000000000014 /* ScanObservation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanObservation.swift; sourceTree = "<group>"; };
+		100000000000000000000015 /* ScanObservationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanObservationTests.swift; sourceTree = "<group>"; };
+		100000000000000000000016 /* QRDetectionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRDetectionService.swift; sourceTree = "<group>"; };
+		100000000000000000000017 /* QRDetectionServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRDetectionServiceTests.swift; sourceTree = "<group>"; };
+		100000000000000000000018 /* ImageAnalysisService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAnalysisService.swift; sourceTree = "<group>"; };
+		100000000000000000000019 /* ImageAnalysisServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAnalysisServiceTests.swift; sourceTree = "<group>"; };
+		10000000000000000000001A /* UserIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserIntent.swift; sourceTree = "<group>"; };
+		10000000000000000000001B /* VisualContextFeatures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualContextFeatures.swift; sourceTree = "<group>"; };
+		10000000000000000000001C /* ContextFeatureExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextFeatureExtractor.swift; sourceTree = "<group>"; };
+		10000000000000000000001D /* ContextFeatureExtractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextFeatureExtractorTests.swift; sourceTree = "<group>"; };
+		10000000000000000000001E /* ClassificationRuleResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassificationRuleResult.swift; sourceTree = "<group>"; };
+		10000000000000000000001F /* ContextClassificationRules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextClassificationRules.swift; sourceTree = "<group>"; };
+		100000000000000000000020 /* MultiSignalContextClassifierTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiSignalContextClassifierTests.swift; sourceTree = "<group>"; };
+		100000000000000000000021 /* CameraCaptureService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraCaptureService.swift; sourceTree = "<group>"; };
+		100000000000000000000022 /* CameraPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreview.swift; sourceTree = "<group>"; };
+		100000000000000000000023 /* CameraCaptureServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraCaptureServiceTests.swift; sourceTree = "<group>"; };
+		100000000000000000000024 /* LiveQRCodeDetection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveQRCodeDetection.swift; sourceTree = "<group>"; };
+		100000000000000000000025 /* QRCodeStabilityTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeStabilityTrackerTests.swift; sourceTree = "<group>"; };
+		100000000000000000000026 /* LiveScannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveScannerViewModel.swift; sourceTree = "<group>"; };
+		100000000000000000000027 /* LiveScannerViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveScannerViewModelTests.swift; sourceTree = "<group>"; };
+		100000000000000000000028 /* ContextAssociationEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextAssociationEngine.swift; sourceTree = "<group>"; };
+		100000000000000000000029 /* ImageQualityAssessmentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageQualityAssessmentService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		100000000000000000000501 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		100000000000000000000502 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		100000000000000000000601 = {
+			isa = PBXGroup;
+			children = (
+				100000000000000000000602 /* PasskeyContextScanner */,
+				100000000000000000000603 /* PasskeyContextScannerTests */,
+				100000000000000000000604 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		100000000000000000000602 /* PasskeyContextScanner */ = {
+			isa = PBXGroup;
+			children = (
+				100000000000000000000605 /* App */,
+				100000000000000000000606 /* Features */,
+				100000000000000000000607 /* Models */,
+				100000000000000000000608 /* Services */,
+			);
+			path = PasskeyContextScanner;
+			sourceTree = "<group>";
+		};
+		100000000000000000000603 /* PasskeyContextScannerTests */ = {
+			isa = PBXGroup;
+			children = (
+				10000000000000000000000D /* DomainExtractorTests.swift */,
+				100000000000000000000013 /* EvaluationLoggerTests.swift */,
+				100000000000000000000015 /* ScanObservationTests.swift */,
+				100000000000000000000017 /* QRDetectionServiceTests.swift */,
+				100000000000000000000019 /* ImageAnalysisServiceTests.swift */,
+				10000000000000000000001D /* ContextFeatureExtractorTests.swift */,
+				100000000000000000000020 /* MultiSignalContextClassifierTests.swift */,
+				100000000000000000000023 /* CameraCaptureServiceTests.swift */,
+				100000000000000000000025 /* QRCodeStabilityTrackerTests.swift */,
+				100000000000000000000027 /* LiveScannerViewModelTests.swift */,
+			);
+			path = PasskeyContextScannerTests;
+			sourceTree = "<group>";
+		};
+		100000000000000000000604 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				10000000000000000000000F /* PasskeyContextScanner.app */,
+				100000000000000000000010 /* PasskeyContextScannerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		100000000000000000000605 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				100000000000000000000001 /* PasskeyContextScannerApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		100000000000000000000606 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				100000000000000000000609 /* Home */,
+				10000000000000000000060A /* Scanner */,
+				10000000000000000000060B /* StaticImageAnalysis */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		100000000000000000000607 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				100000000000000000000006 /* RiskClassification.swift */,
+				100000000000000000000007 /* VisualContext.swift */,
+				100000000000000000000008 /* ScanResult.swift */,
+				100000000000000000000012 /* EvaluationRecord.swift */,
+				100000000000000000000014 /* ScanObservation.swift */,
+				10000000000000000000001A /* UserIntent.swift */,
+				10000000000000000000001B /* VisualContextFeatures.swift */,
+				10000000000000000000001E /* ClassificationRuleResult.swift */,
+				100000000000000000000024 /* LiveQRCodeDetection.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		100000000000000000000608 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				100000000000000000000009 /* OCRService.swift */,
+				10000000000000000000000A /* DomainExtractor.swift */,
+				10000000000000000000000B /* ContextClassifier.swift */,
+				10000000000000000000000C /* EvaluationLogger.swift */,
+				100000000000000000000016 /* QRDetectionService.swift */,
+				100000000000000000000018 /* ImageAnalysisService.swift */,
+				10000000000000000000001C /* ContextFeatureExtractor.swift */,
+				10000000000000000000001F /* ContextClassificationRules.swift */,
+				100000000000000000000021 /* CameraCaptureService.swift */,
+				100000000000000000000028 /* ContextAssociationEngine.swift */,
+				100000000000000000000029 /* ImageQualityAssessmentService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		100000000000000000000609 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				100000000000000000000002 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		10000000000000000000060A /* Scanner */ = {
+			isa = PBXGroup;
+			children = (
+				100000000000000000000003 /* ScannerView.swift */,
+				100000000000000000000022 /* CameraPreview.swift */,
+				100000000000000000000026 /* LiveScannerViewModel.swift */,
+				100000000000000000000005 /* ResultView.swift */,
+			);
+			path = Scanner;
+			sourceTree = "<group>";
+		};
+		10000000000000000000060B /* StaticImageAnalysis */ = {
+			isa = PBXGroup;
+			children = (
+				100000000000000000000004 /* StaticImageAnalysisView.swift */,
+				100000000000000000000011 /* StaticImageAnalysisViewModel.swift */,
+			);
+			path = StaticImageAnalysis;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		100000000000000000000401 /* PasskeyContextScanner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 100000000000000000000701 /* Build configuration list for PBXNativeTarget "PasskeyContextScanner" */;
+			buildPhases = (
+				100000000000000000000801 /* Sources */,
+				100000000000000000000501 /* Frameworks */,
+				100000000000000000000901 /* Resources */,
+				100000000000000000000903 /* Inject Build Provenance */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PasskeyContextScanner;
+			productName = PasskeyContextScanner;
+			productReference = 10000000000000000000000F /* PasskeyContextScanner.app */;
+			productType = "com.apple.product-type.application";
+		};
+		100000000000000000000402 /* PasskeyContextScannerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 100000000000000000000702 /* Build configuration list for PBXNativeTarget "PasskeyContextScannerTests" */;
+			buildPhases = (
+				100000000000000000000802 /* Sources */,
+				100000000000000000000502 /* Frameworks */,
+				100000000000000000000902 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				100000000000000000000202 /* PBXTargetDependency */,
+			);
+			name = PasskeyContextScannerTests;
+			productName = PasskeyContextScannerTests;
+			productReference = 100000000000000000000010 /* PasskeyContextScannerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		100000000000000000000301 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2660;
+				LastUpgradeCheck = 2660;
+				TargetAttributes = {
+					100000000000000000000401 = {
+						CreatedOnToolsVersion = 26.6;
+					};
+					100000000000000000000402 = {
+						CreatedOnToolsVersion = 26.6;
+						TestTargetID = 100000000000000000000401;
+					};
+				};
+			};
+			buildConfigurationList = 100000000000000000000703 /* Build configuration list for PBXProject "PasskeyContextScanner" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 100000000000000000000601;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 100000000000000000000604 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				100000000000000000000401 /* PasskeyContextScanner */,
+				100000000000000000000402 /* PasskeyContextScannerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		100000000000000000000901 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		100000000000000000000902 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		100000000000000000000903 /* Inject Build Provenance */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/.git/HEAD",
+				"$(TARGET_BUILD_DIR)/$(INFOPLIST_PATH)",
+			);
+			name = "Inject Build Provenance";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -eu\ncommit=$(/usr/bin/git -C \"$SRCROOT\" rev-parse --verify HEAD 2>/dev/null || true)\nif [ -z \"$commit\" ]; then\n    commit=${GIT_COMMIT_FALLBACK:-not_recorded}\nfi\ndirty=false\nif ! /usr/bin/git -C \"$SRCROOT\" diff --quiet --ignore-submodules -- 2>/dev/null || ! /usr/bin/git -C \"$SRCROOT\" diff --cached --quiet --ignore-submodules -- 2>/dev/null; then\n    dirty=true\nfi\ninfo_plist=\"$TARGET_BUILD_DIR/$INFOPLIST_PATH\"\nif [ ! -f \"$info_plist\" ]; then\n    echo \"error: Built Info.plist was not found at $info_plist\"\n    exit 1\nfi\n/usr/libexec/PlistBuddy -c \"Delete :GIT_COMMIT\" \"$info_plist\" >/dev/null 2>&1 || true\n/usr/libexec/PlistBuddy -c \"Delete :GIT_WORKING_TREE_DIRTY\" \"$info_plist\" >/dev/null 2>&1 || true\n/usr/libexec/PlistBuddy -c \"Add :GIT_COMMIT string $commit\" \"$info_plist\"\n/usr/libexec/PlistBuddy -c \"Add :GIT_WORKING_TREE_DIRTY bool $dirty\" \"$info_plist\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		100000000000000000000801 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				100000000000000000000101 /* PasskeyContextScannerApp.swift in Sources */,
+				100000000000000000000102 /* HomeView.swift in Sources */,
+				100000000000000000000103 /* ScannerView.swift in Sources */,
+				100000000000000000000104 /* StaticImageAnalysisView.swift in Sources */,
+				100000000000000000000105 /* ResultView.swift in Sources */,
+				100000000000000000000106 /* RiskClassification.swift in Sources */,
+				100000000000000000000107 /* VisualContext.swift in Sources */,
+				100000000000000000000108 /* ScanResult.swift in Sources */,
+				100000000000000000000109 /* OCRService.swift in Sources */,
+				10000000000000000000010A /* DomainExtractor.swift in Sources */,
+				10000000000000000000010B /* ContextClassifier.swift in Sources */,
+				10000000000000000000010C /* EvaluationLogger.swift in Sources */,
+				10000000000000000000010F /* StaticImageAnalysisViewModel.swift in Sources */,
+				100000000000000000000110 /* EvaluationRecord.swift in Sources */,
+				100000000000000000000112 /* ScanObservation.swift in Sources */,
+				100000000000000000000114 /* QRDetectionService.swift in Sources */,
+				100000000000000000000116 /* ImageAnalysisService.swift in Sources */,
+				100000000000000000000118 /* UserIntent.swift in Sources */,
+				100000000000000000000119 /* VisualContextFeatures.swift in Sources */,
+				10000000000000000000011A /* ContextFeatureExtractor.swift in Sources */,
+				10000000000000000000011C /* ClassificationRuleResult.swift in Sources */,
+				10000000000000000000011D /* ContextClassificationRules.swift in Sources */,
+				10000000000000000000011F /* CameraCaptureService.swift in Sources */,
+				100000000000000000000120 /* CameraPreview.swift in Sources */,
+				100000000000000000000122 /* LiveQRCodeDetection.swift in Sources */,
+				100000000000000000000124 /* LiveScannerViewModel.swift in Sources */,
+				100000000000000000000126 /* ContextAssociationEngine.swift in Sources */,
+				100000000000000000000127 /* ImageQualityAssessmentService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		100000000000000000000802 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10000000000000000000010D /* DomainExtractorTests.swift in Sources */,
+				100000000000000000000111 /* EvaluationLoggerTests.swift in Sources */,
+				100000000000000000000113 /* ScanObservationTests.swift in Sources */,
+				100000000000000000000115 /* QRDetectionServiceTests.swift in Sources */,
+				100000000000000000000117 /* ImageAnalysisServiceTests.swift in Sources */,
+				10000000000000000000011B /* ContextFeatureExtractorTests.swift in Sources */,
+				10000000000000000000011E /* MultiSignalContextClassifierTests.swift in Sources */,
+				100000000000000000000121 /* CameraCaptureServiceTests.swift in Sources */,
+				100000000000000000000123 /* QRCodeStabilityTrackerTests.swift in Sources */,
+				100000000000000000000125 /* LiveScannerViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		100000000000000000000202 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 100000000000000000000401 /* PasskeyContextScanner */;
+			targetProxy = 100000000000000000000201 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		100000000000000000000A01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		100000000000000000000A02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		100000000000000000000A03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 333MJFQ4X8;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Passkey Context Scanner";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera access is used to detect a QR code and analyse the visible context on a nearby display. Frames are processed locally and are not retained by default.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Photo access is used only when you choose an image for local QR and visible-context analysis.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = uk.ac.prototype.PasskeyContextScanner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		100000000000000000000A04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 333MJFQ4X8;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Passkey Context Scanner";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera access is used to detect a QR code and analyse the visible context on a nearby display. Frames are processed locally and are not retained by default.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Photo access is used only when you choose an image for local QR and visible-context analysis.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = uk.ac.prototype.PasskeyContextScanner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		100000000000000000000A05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 333MJFQ4X8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = uk.ac.prototype.PasskeyContextScannerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PasskeyContextScanner.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PasskeyContextScanner";
+			};
+			name = Debug;
+		};
+		100000000000000000000A06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 333MJFQ4X8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = uk.ac.prototype.PasskeyContextScannerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PasskeyContextScanner.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PasskeyContextScanner";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		100000000000000000000701 /* Build configuration list for PBXNativeTarget "PasskeyContextScanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				100000000000000000000A03 /* Debug */,
+				100000000000000000000A04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		100000000000000000000702 /* Build configuration list for PBXNativeTarget "PasskeyContextScannerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				100000000000000000000A05 /* Debug */,
+				100000000000000000000A06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		100000000000000000000703 /* Build configuration list for PBXProject "PasskeyContextScanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				100000000000000000000A01 /* Debug */,
+				100000000000000000000A02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 100000000000000000000301 /* Project object */;
+}
